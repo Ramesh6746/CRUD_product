@@ -1,0 +1,13 @@
+{% extends 'myapp/base.html' %}
+
+{% block content %}
+<div class= 'row'>
+    <div clas = 'col-sm-4'>
+        <h4 class= 'text-center alert alert-info'>Add New Student</h4>
+        <form action="" method="post">{% csrf_token %}
+            {{form.as_p}}
+            <input type="Submit" value="Submit" class="btn btn-success">
+        </form>
+    </div>
+</div>
+{% endblock content %}
